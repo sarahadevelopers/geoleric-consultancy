@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | GeoLeric Consultants — Machakos County, Kenya</title>
+<meta name="description" content="Contact GeoLeric Consultants for physical planning, GIS mapping, drone surveys and NEMA-compliant environmental audits in Machakos County. Submit your plot details, book a consultation, or reach us directly.">
+<meta name="theme-color" content="#2CB2E2">
+
+<!-- ========== FONT: JOST ========== -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+<!-- ========== TAILWIND (Play CDN) ========== -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['Jost', 'ui-sans-serif', 'system-ui', '-apple-system', 'Segoe UI', 'sans-serif'],
+        },
+        colors: {
+          brand: {
+            blue:  '#2CB2E2',
+            yellow:'#FBB03B',
+            red:   '#E61C24',
+            ink:   '#1A1D20',
+            coal:  '#212529',
+            mist:  '#F8F9FA',
+          }
+        },
+        maxWidth: { prose: '62ch' }
+      }
+    }
+  }
+</script>
+
+<!-- ========== PREMIUM TYPE SYSTEM ========== -->
+<style type="text/tailwindcss">
+  @layer base {
+    :root {
+      --fs-h1: 36px;
+      --fs-h2: 28px;
+      --fs-h3: 24px;
+      --fs-h4: 22px;
+      --lh-tight: 1.15;
+      --lh-snug: 1.28;
+      --lh-body: 1.75;
+    }
+
+    html {
+      font-family: 'Jost', ui-sans-serif, system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+      scroll-padding-top: 6rem;
+    }
+
+    body {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: var(--lh-body);
+      color: #212529;
+      background: #FFFFFF;
+    }
+
+    h1, .h1 { font-size: var(--fs-h1); font-weight: 500; line-height: var(--lh-tight); letter-spacing: -0.022em; color: #1A1D20; }
+    h2, .h2 { font-size: var(--fs-h2); font-weight: 500; line-height: 1.22; letter-spacing: -0.018em; color: #1A1D20; }
+    h3, .h3 { font-size: var(--fs-h3); font-weight: 500; line-height: var(--lh-snug); letter-spacing: -0.012em; color: #1A1D20; }
+    h4, h5, h6, .h4 { font-size: var(--fs-h4); font-weight: 500; line-height: 1.35; letter-spacing: -0.008em; color: #1A1D20; }
+
+    p, li, .body-text { font-weight: 300; line-height: var(--lh-body); letter-spacing: 0.004em; }
+
+    p.small, .text-xs, .text-\[11px\] { letter-spacing: 0.015em; }
+
+    ::selection { background: #2CB2E2; color: #FFFFFF; }
+  }
+
+  @layer components {
+    .eyebrow {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      line-height: 1;
+    }
+
+    .nav-link {
+      position: relative;
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: 0.03em;
+      color: #212529;
+      transition: color .3s cubic-bezier(.4,0,.2,1);
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 0; bottom: -7px;
+      width: 100%; height: 1.5px;
+      background: #2CB2E2;
+      transform: scaleX(0);
+      transform-origin: left center;
+      transition: transform .38s cubic-bezier(.4,0,.2,1);
+    }
+    .nav-link:hover { color: #2CB2E2; }
+    .nav-link:hover::after { transform: scaleX(1); }
+    .nav-link.is-active { color: #2CB2E2; }
+    .nav-link.is-active::after { transform: scaleX(1); }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: .55rem;
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: 0.045em;
+      padding: 14px 30px;
+      border-radius: 10px;
+      transition: all .35s cubic-bezier(.4,0,.2,1);
+      will-change: transform;
+    }
+    .btn-primary { background: #E61C24; color: #FFFFFF; box-shadow: 0 8px 22px -10px rgba(230,28,36,.65); }
+    .btn-primary:hover { background: #c8171e; transform: translateY(-2px); box-shadow: 0 16px 30px -12px rgba(230,28,36,.7); }
+    .btn-accent { background: #FBB03B; color: #1A1D20; box-shadow: 0 8px 22px -10px rgba(251,176,59,.7); }
+    .btn-accent:hover { background: #E61C24; color: #FFFFFF; transform: translateY(-2px); box-shadow: 0 16px 30px -12px rgba(230,28,36,.6); }
+    .btn-ghost { background: #FFFFFF; color: #1A1D20; border: 1px solid rgba(33,37,41,.12); }
+    .btn-ghost:hover { border-color: #2CB2E2; color: #2CB2E2; transform: translateY(-2px); }
+    .btn-dark-ghost { background: transparent; color: #FFFFFF; border: 1px solid rgba(255,255,255,.25); }
+    .btn-dark-ghost:hover { background: #FFFFFF; color: #1A1D20; border-color: #FFFFFF; transform: translateY(-2px); }
+
+    .hairline { height: 1px; background: rgba(33,37,41,.08); }
+
+    .dot-grid {
+      background-image: radial-gradient(rgba(44,178,226,.22) 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+
+    .drawer-link { font-size: 17px; font-weight: 400; letter-spacing: 0.01em; color: #FFFFFF; padding: 10px 0; transition: color .3s ease; }
+    .drawer-link:hover { color: #2CB2E2; }
+
+    .drawer-sub { font-size: 14px; font-weight: 300; color: #9CA3AF; padding: 8px 0 8px 14px; border-left: 1px solid rgba(255,255,255,.10); transition: all .3s ease; }
+    .drawer-sub:hover { color: #2CB2E2; border-left-color: #2CB2E2; padding-left: 18px; }
+
+    /* Form field base */
+    .field {
+      width: 100%;
+      padding: 15px 18px;
+      border-radius: 12px;
+      font-size: 15px;
+      font-weight: 300;
+      font-family: inherit;
+      line-height: 1.5;
+      transition: all .3s cubic-bezier(.4,0,.2,1);
+    }
+    .field-dark {
+      background: rgba(255,255,255,.05);
+      border: 1px solid rgba(255,255,255,.10);
+      color: #FFFFFF;
+    }
+    .field-dark::placeholder { color: #6B7280; font-weight: 300; }
+    .field-dark:focus {
+      outline: none;
+      border-color: #2CB2E2;
+      background: rgba(255,255,255,.08);
+      box-shadow: 0 0 0 3px rgba(44,178,226,.12);
+    }
+    .field-dark option { background: #1A1D20; color: #FFFFFF; }
+
+    /* Channel card */
+    .channel-card {
+      display: flex;
+      gap: 1.25rem;
+      padding: 1.75rem;
+      border-radius: 16px;
+      background: #FFFFFF;
+      border: 1px solid rgba(33,37,41,.07);
+      transition: all .4s cubic-bezier(.4,0,.2,1);
+    }
+    .channel-card:hover {
+      border-color: rgba(44,178,226,.35);
+      transform: translateY(-3px);
+      box-shadow: 0 24px 48px -28px rgba(44,178,226,.5);
+    }
+  }
+</style>
+</head>
+
+<body class="bg-white antialiased">
+
+<!-- ============================================================
+     NAVBAR
+============================================================ -->
+<header class="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-xl border-b border-black/5">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="flex items-center justify-between h-20">
+
+      <a href="index.html" class="flex items-center gap-3 shrink-0">
+        <img src="/assets/geoleric-logo.png"
+             alt="GeoLeric Consultants — Physical Planning, GIS & Environmental Experts"
+             width="180" height="48" class="h-11 w-auto object-contain">
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-9">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+
+        <div class="relative group">
+          <button class="nav-link flex items-center gap-1.5 focus:outline-none">
+            Our Services
+            <svg class="w-3.5 h-3.5 transition-transform duration-300 group-hover:rotate-180"
+                 fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+
+          <div class="absolute left-0 top-full pt-5 opacity-0 invisible translate-y-1
+                      group-hover:opacity-100 group-hover:visible group-hover:translate-y-0
+                      transition-all duration-300 ease-out z-50">
+            <div class="w-72 bg-white rounded-2xl border border-black/5 shadow-[0_24px_60px_-24px_rgba(26,29,32,.35)] p-2">
+              <a href="services.html#planning" class="block px-4 py-3.5 rounded-xl hover:bg-brand-mist transition-colors">
+                <span class="block text-[14px] font-medium text-brand-coal">Physical &amp; Spatial Planning</span>
+                <span class="block text-[12px] font-light text-gray-400 mt-0.5">Subdivisions · Change of User · Layouts</span>
+              </a>
+              <a href="services.html#gis" class="block px-4 py-3.5 rounded-xl hover:bg-brand-mist transition-colors">
+                <span class="block text-[14px] font-medium text-brand-coal">GIS Mapping &amp; Analytics</span>
+                <span class="block text-[12px] font-light text-gray-400 mt-0.5">Cadastral · Topography · Drone Surveys</span>
+              </a>
+              <a href="services.html#environmental" class="block px-4 py-3.5 rounded-xl hover:bg-brand-mist transition-colors">
+                <span class="block text-[14px] font-medium text-brand-coal">Environmental Consulting</span>
+                <span class="block text-[12px] font-light text-gray-400 mt-0.5">NEMA EIA · Audits · Effluent Plans</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <a href="index.html#footprint" class="nav-link">Regional Footprint</a>
+        <a href="contact.html" class="nav-link is-active" aria-current="page">Contact Us</a>
+      </nav>
+
+      <div class="hidden lg:block">
+        <a href="#quote-form" class="btn btn-accent">Get a Quote</a>
+      </div>
+
+      <button id="mobile-menu-btn" aria-label="Open navigation menu"
+              class="lg:hidden p-2.5 -mr-2 text-brand-coal hover:text-brand-blue transition-colors">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+          <path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+      </button>
+
+    </div>
+  </div>
+</header>
+
+
+<!-- ============================================================
+     MOBILE DRAWER
+============================================================ -->
+<div id="mobile-drawer" class="fixed inset-0 z-[60] pointer-events-none">
+  <div id="drawer-overlay" class="absolute inset-0 bg-brand-ink/50 backdrop-blur-sm opacity-0 transition-opacity duration-400"></div>
+
+  <aside id="drawer-content"
+         class="absolute right-0 top-0 bottom-0 w-[86%] max-w-sm bg-brand-ink
+                translate-x-full transition-transform duration-400 ease-[cubic-bezier(.4,0,.2,1)]
+                flex flex-col justify-between p-7 shadow-2xl">
+
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-white/10">
+        <span class="eyebrow text-brand-blue">Navigation</span>
+        <button id="close-drawer-btn" aria-label="Close navigation menu"
+                class="text-gray-400 hover:text-white p-1 transition-colors">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+            <path stroke-linecap="round" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="flex flex-col mt-8 gap-1">
+        <a href="index.html" class="drawer-link">Home</a>
+        <a href="about.html" class="drawer-link">About Us</a>
+
+        <div class="mt-5 mb-2">
+          <span class="eyebrow text-gray-500">Our Services</span>
+        </div>
+        <a href="services.html#planning" class="drawer-sub">Physical &amp; Spatial Planning</a>
+        <a href="services.html#gis" class="drawer-sub">GIS Mapping &amp; Analytics</a>
+        <a href="services.html#environmental" class="drawer-sub">Environmental Consulting</a>
+
+        <div class="hairline my-5 bg-white/10"></div>
+        <a href="index.html#footprint" class="drawer-link">Regional Footprint</a>
+        <a href="contact.html" class="drawer-link">Contact Us</a>
+      </nav>
+    </div>
+
+    <a href="#quote-form" class="btn btn-accent w-full">Get a Quote</a>
+  </aside>
+</div>
+
+
+<!-- ============================================================
+     PAGE HERO
+============================================================ -->
+<section class="relative overflow-hidden bg-gradient-to-br from-white via-brand-mist to-brand-blue/[0.07] border-b border-black/[0.05]">
+  <div class="absolute inset-0 dot-grid opacity-[0.35] pointer-events-none"></div>
+
+  <div class="relative max-w-7xl mx-auto px-5 sm:px-8 py-20 lg:py-28">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
+
+      <div class="lg:col-span-8">
+        <nav aria-label="Breadcrumb" class="flex items-center gap-2 text-[12px] font-light text-gray-400">
+          <a href="index.html" class="hover:text-brand-blue transition-colors duration-300">Home</a>
+          <span class="text-gray-300">/</span>
+          <span class="text-brand-coal font-normal">Contact Us</span>
+        </nav>
+
+        <span class="mt-8 eyebrow inline-flex items-center gap-2 text-brand-blue">
+          <span class="w-6 h-px bg-brand-blue"></span>
+          Consultation Desk
+        </span>
+
+        <h1 class="mt-6 max-w-[20ch]">
+          Let's Put Your Land Project on
+          <span class="text-brand-blue">Solid Technical Ground.</span>
+        </h1>
+
+        <p class="mt-7 max-w-prose text-[17px] text-gray-500">
+          Share your site details and objectives. Our technical team will evaluate your
+          spatial boundaries, planning requirements or environmental compliance scope
+          and respond with a clear, itemised pathway.
+        </p>
+      </div>
+
+      <!-- Response expectation rail -->
+      <div class="lg:col-span-4 lg:pl-10 lg:border-l lg:border-black/[0.08]">
+        <span class="eyebrow text-gray-400">Typical Response</span>
+        <div class="mt-5 space-y-4">
+          <div class="flex items-baseline gap-3">
+            <span class="text-[28px] font-medium text-brand-ink leading-none">24h</span>
+            <span class="text-[13px] font-light text-gray-500">Initial acknowledgement of your enquiry</span>
+          </div>
+          <div class="flex items-baseline gap-3">
+            <span class="text-[28px] font-medium text-brand-ink leading-none">48h</span>
+            <span class="text-[13px] font-light text-gray-500">Scoping response with clear next steps</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     DIRECT CONTACT CHANNELS
+============================================================ -->
+<section class="py-20 lg:py-24 bg-white border-b border-black/[0.06]">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+
+    <div class="max-w-2xl">
+      <span class="eyebrow text-brand-blue">Direct Channels</span>
+      <h2 class="mt-5">Reach Us Without the Form</h2>
+      <p class="mt-5 text-[16px] text-gray-500">
+        For urgent project enquiries or field coordination, use whichever channel suits
+        your situation.
+      </p>
+    </div>
+
+    <div class="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Email -->
+      <a href="mailto:info@geolericconsultancy.co.ke" class="channel-card group">
+        <div class="w-12 h-12 shrink-0 rounded-xl bg-brand-blue/10 text-brand-blue flex items-center justify-center group-hover:bg-brand-blue group-hover:text-white transition-colors duration-500">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/>
+          </svg>
+        </div>
+        <div class="min-w-0">
+          <span class="eyebrow text-gray-400">Email</span>
+          <p class="mt-2 text-[15px] font-normal text-brand-coal break-all">info@geolericconsultancy.co.ke</p>
+          <p class="mt-2 text-[13px] font-light text-gray-500">Attach documents and site photos directly.</p>
+        </div>
+      </a>
+
+      <!-- Phone / WhatsApp -->
+      <a href="tel:+254" class="channel-card group">
+        <div class="w-12 h-12 shrink-0 rounded-xl bg-brand-yellow/15 text-brand-yellow flex items-center justify-center group-hover:bg-brand-yellow group-hover:text-brand-ink transition-colors duration-500">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
+          </svg>
+        </div>
+        <div class="min-w-0">
+          <span class="eyebrow text-gray-400">Phone &amp; WhatsApp</span>
+          <p class="mt-2 text-[15px] font-normal text-brand-coal">Available on request</p>
+          <p class="mt-2 text-[13px] font-light text-gray-500">Best for scheduling site visits and quick clarifications.</p>
+        </div>
+      </a>
+
+      <!-- Office -->
+      <div class="channel-card group">
+        <div class="w-12 h-12 shrink-0 rounded-xl bg-brand-red/10 text-brand-red flex items-center justify-center group-hover:bg-brand-red group-hover:text-white transition-colors duration-500">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/>
+          </svg>
+        </div>
+        <div class="min-w-0">
+          <span class="eyebrow text-gray-400">Office</span>
+          <p class="mt-2 text-[15px] font-normal text-brand-coal">Machakos County, Kenya</p>
+          <p class="mt-2 text-[13px] font-light text-gray-500">Visits by prior appointment only.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     QUOTE FORM + INFO PANEL
+============================================================ -->
+<section id="quote-form" class="relative py-24 lg:py-32 bg-brand-ink text-white overflow-hidden">
+  <div class="absolute inset-0 dot-grid opacity-[0.10] pointer-events-none"></div>
+  <div class="absolute -top-40 right-0 w-[560px] h-[560px] rounded-full bg-brand-blue/[0.08] blur-3xl pointer-events-none"></div>
+
+  <div class="relative max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+
+      <!-- Left: form -->
+      <div class="lg:col-span-7">
+        <span class="eyebrow text-brand-yellow">Project Enquiry</span>
+        <h2 class="mt-5 text-white max-w-[22ch]">Submit Your Project Specifications</h2>
+        <p class="mt-5 max-w-prose text-[15px] font-light text-gray-400">
+          The more detail you provide — especially plot or L.R. number and location —
+          the faster we can give you an accurate scope and cost indication.
+        </p>
+
+        <form id="contact-form" class="mt-11 grid grid-cols-1 sm:grid-cols-2 gap-5" novalidate>
+
+          <div class="flex flex-col">
+            <label for="fullname" class="eyebrow text-gray-400 mb-2.5">Full Name / Corporate Entity</label>
+            <input id="fullname" name="fullname" type="text" required autocomplete="name"
+                   placeholder="Charles Karanja"
+                   class="field field-dark">
+          </div>
+
+          <div class="flex flex-col">
+            <label for="phone" class="eyebrow text-gray-400 mb-2.5">Phone / WhatsApp</label>
+            <input id="phone" name="phone" type="tel" required autocomplete="tel"
+                   placeholder="0723 000 000"
+                   class="field field-dark">
+          </div>
+
+          <div class="flex flex-col">
+            <label for="email" class="eyebrow text-gray-400 mb-2.5">Email Address</label>
+            <input id="email" name="email" type="email" autocomplete="email"
+                   placeholder="you@company.co.ke"
+                   class="field field-dark">
+          </div>
+
+          <div class="flex flex-col">
+            <label for="area" class="eyebrow text-gray-400 mb-2.5">Property Location (Sub-County)</label>
+            <select id="area" name="area" class="field field-dark">
+              <option>Mavoko (Athi River, Syokimau, Mlolongo)</option>
+              <option>Matungulu (Joska, Malaa)</option>
+              <option>Machakos Central &amp; Town</option>
+              <option>Yatta (Matuu)</option>
+              <option>Kangundo</option>
+              <option>Outside Machakos County</option>
+            </select>
+          </div>
+
+          <div class="sm:col-span-2 flex flex-col">
+            <label for="service" class="eyebrow text-gray-400 mb-2.5">Consultancy Scope Required</label>
+            <select id="service" name="service" class="field field-dark">
+              <option>Physical Planning &amp; Subdivision Schemes</option>
+              <option>Change of User / Extension of User</option>
+              <option>Master Layout Plan Design</option>
+              <option>GIS Mapping &amp; Terrain Surveys</option>
+              <option>Boundary Verification / Cadastral Mapping</option>
+              <option>Drone / UAV Aerial Survey</option>
+              <option>NEMA Environmental Impact Assessment (EIA)</option>
+              <option>Annual Environmental / Waste Audit</option>
+              <option>Effluent Discharge Licence</option>
+              <option>Multiple Services (Please Specify Below)</option>
+            </select>
+          </div>
+
+          <div class="sm:col-span-2 flex flex-col">
+            <label for="plot" class="eyebrow text-gray-400 mb-2.5">Plot / L.R. Number</label>
+            <input id="plot" name="plot" type="text"
+                   placeholder="e.g. Machakos/Block 3/1234"
+                   class="field field-dark">
+          </div>
+
+          <div class="sm:col-span-2 flex flex-col">
+            <label for="details" class="eyebrow text-gray-400 mb-2.5">
+              Project Description
+              <span class="normal-case tracking-normal text-gray-600 ml-1">(optional but recommended)</span>
+            </label>
+            <textarea id="details" name="details" rows="5"
+                      placeholder="Describe the site, what you want to achieve, any deadlines or existing documentation you hold…"
+                      class="field field-dark resize-none"></textarea>
+          </div>
+
+          <!-- Consent -->
+          <div class="sm:col-span-2 flex items-start gap-3">
+            <input id="consent" name="consent" type="checkbox" required
+                   class="mt-1.5 w-4 h-4 rounded border-white/20 bg-white/5 text-brand-blue focus:ring-brand-blue focus:ring-offset-0 cursor-pointer">
+            <label for="consent" class="text-[13px] font-light text-gray-400 cursor-pointer leading-relaxed">
+              I consent to GeoLeric Consultants storing the information above for the
+              purpose of responding to this enquiry, in line with Kenya's Data Protection Act.
+            </label>
+          </div>
+
+          <div class="sm:col-span-2 pt-2">
+            <button type="submit" class="btn btn-primary w-full py-4 text-[15px]">
+              Submit Project Enquiry
+            </button>
+            <p id="form-status" class="mt-4 text-center text-[13px] font-light text-gray-500" role="status" aria-live="polite"></p>
+          </div>
+
+        </form>
+      </div>
+
+      <!-- Right: info panel -->
+      <aside class="lg:col-span-5">
+        <div class="sticky top-28 space-y-6">
+
+          <!-- What happens next -->
+          <div class="p-8 rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-sm">
+            <span class="eyebrow text-brand-blue">After You Submit</span>
+            <div class="mt-6 space-y-5">
+
+              <div class="flex gap-4">
+                <span class="shrink-0 w-7 h-7 rounded-lg bg-brand-blue/15 text-brand-blue flex items-center justify-center text-[12px] font-medium">1</span>
+                <div>
+                  <h4 class="text-white text-[15px]">Acknowledgement</h4>
+                  <p class="mt-1 text-[13px] font-light text-gray-400">We confirm receipt of your enquiry within 24 hours.</p>
+                </div>
+              </div>
+
+              <div class="flex gap-4">
+                <span class="shrink-0 w-7 h-7 rounded-lg bg-brand-blue/15 text-brand-blue flex items-center justify-center text-[12px] font-medium">2</span>
+                <div>
+                  <h4 class="text-white text-[15px]">Technical Review</h4>
+                  <p class="mt-1 text-[13px] font-light text-gray-400">A planner reviews your location and scope against county and NEMA requirements.</p>
+                </div>
+              </div>
+
+              <div class="flex gap-4">
+                <span class="shrink-0 w-7 h-7 rounded-lg bg-brand-blue/15 text-brand-blue flex items-center justify-center text-[12px] font-medium">3</span>
+                <div>
+                  <h4 class="text-white text-[15px]">Scoping Response</h4>
+                  <p class="mt-1 text-[13px] font-light text-gray-400">You receive a written pathway — deliverables, timeline and cost indication.</p>
+                </div>
+              </div>
+
+              <div class="flex gap-4">
+                <span class="shrink-0 w-7 h-7 rounded-lg bg-brand-blue/15 text-brand-blue flex items-center justify-center text-[12px] font-medium">4</span>
+                <div>
+                  <h4 class="text-white text-[15px]">Engagement &amp; Site Visit</h4>
+                  <p class="mt-1 text-[13px] font-light text-gray-400">On agreement, we schedule the field assessment and begin work.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Office hours -->
+          <div class="p-8 rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-sm">
+            <span class="eyebrow text-brand-blue">Office Hours</span>
+            <div class="mt-5 space-y-0">
+              <div class="flex items-center justify-between py-3 border-b border-white/[0.07]">
+                <span class="text-[14px] font-normal text-white">Monday – Friday</span>
+                <span class="text-[13px] font-light text-gray-400">8:00 AM – 5:00 PM</span>
+              </div>
+              <div class="flex items-center justify-between py-3 border-b border-white/[0.07]">
+                <span class="text-[14px] font-normal text-white">Saturday</span>
+                <span class="text-[13px] font-light text-gray-400">9:00 AM – 1:00 PM</span>
+              </div>
+              <div class="flex items-center justify-between py-3">
+                <span class="text-[14px] font-normal text-white">Sunday &amp; Public Holidays</span>
+                <span class="text-[13px] font-light text-gray-400">Closed</span>
+              </div>
+            </div>
+            <p class="mt-5 text-[12px] font-light text-gray-500 leading-relaxed">
+              Field surveys are scheduled outside these hours where weather or site
+              access requires it.
+            </p>
+          </div>
+
+          <!-- Data protection note -->
+          <div class="p-6 rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-sm">
+            <div class="flex gap-3">
+              <span class="shrink-0 text-brand-yellow mt-0.5">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"/>
+                </svg>
+              </span>
+              <p class="text-[12px] font-light text-gray-400 leading-relaxed">
+                Land parcel records, title documents and personal data you share with us
+                are treated as confidential and handled in accordance with Kenya's Data
+                Protection Act.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     OFFICE / MAP
+============================================================ -->
+<section class="py-24 lg:py-32 bg-white">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+
+    <div class="max-w-2xl">
+      <span class="eyebrow text-brand-blue">Find Us</span>
+      <h2 class="mt-5">Our Operational Base</h2>
+      <p class="mt-5 text-[16px] text-gray-500">
+        GeoLeric Consultants operates from Machakos County — the centre of one of
+        Kenya's fastest-growing development corridors.
+      </p>
+    </div>
+
+    <div class="mt-16 grid grid-cols-1 lg:grid-cols-12 gap-8">
+
+      <!-- Map placeholder -->
+      <div class="lg:col-span-8">
+        <div class="relative rounded-3xl overflow-hidden border border-black/[0.07] bg-brand-mist aspect-[16/10]">
+          <div class="absolute inset-0 dot-grid opacity-[0.55]"></div>
+
+          <!-- Stylised location marker -->
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="text-center">
+              <div class="mx-auto w-16 h-16 rounded-full bg-brand-blue/15 flex items-center justify-center relative">
+                <span class="absolute inset-0 rounded-full bg-brand-blue/20 animate-ping"></span>
+                <span class="relative w-6 h-6 rounded-full bg-brand-blue shadow-lg"></span>
+              </div>
+              <p class="mt-6 text-[15px] font-medium text-brand-ink">Machakos County, Kenya</p>
+              <p class="mt-1 text-[13px] font-light text-gray-500">Exact office location confirmed on appointment</p>
+            </div>
+          </div>
+
+          <!-- Corner coordinates chip -->
+          <div class="absolute bottom-6 left-6 px-4 py-3 rounded-xl bg-white/95 backdrop-blur border border-black/5 shadow-sm">
+            <span class="eyebrow text-gray-400">Coverage Base</span>
+            <p class="mt-1.5 text-[13px] font-normal text-brand-coal">Machakos · Nairobi Metro</p>
+          </div>
+
+          <!-- Map placeholder note (remove when embedding real map) -->
+          <div class="absolute top-6 right-6 px-3.5 py-2 rounded-lg bg-white/95 backdrop-blur border border-black/5">
+            <span class="text-[11px] font-normal tracking-widest uppercase text-gray-400">Map Placeholder</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Location details -->
+      <div class="lg:col-span-4 space-y-6">
+
+        <div class="p-8 rounded-2xl border border-black/[0.07]">
+          <span class="eyebrow text-gray-400">Registered Base</span>
+          <h4 class="mt-4">Machakos County</h4>
+          <p class="mt-3 text-[14px] text-gray-500">
+            Executive office and field operations coordination for all Machakos
+            sub-counties and the wider Nairobi Metropolitan area.
+          </p>
+        </div>
+
+        <div class="p-8 rounded-2xl border border-black/[0.07]">
+          <span class="eyebrow text-gray-400">Appointments</span>
+          <p class="mt-4 text-[14px] text-gray-500">
+            All office visits are by prior appointment. This ensures the relevant
+            specialist is available and your documents are reviewed before you arrive.
+          </p>
+          <a href="#quote-form" class="inline-flex items-center gap-2 mt-6 text-[13px] font-medium text-brand-blue hover:gap-3 transition-all duration-300">
+            Book an appointment
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7-7 7M21 12H3"/>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     REGIONAL COVERAGE
+============================================================ -->
+<section class="py-24 lg:py-32 bg-brand-mist border-t border-black/[0.06]">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+
+      <div class="lg:col-span-5">
+        <span class="eyebrow text-brand-blue">Where We Work</span>
+        <h2 class="mt-5 max-w-[20ch]">Serving Machakos and Beyond</h2>
+        <p class="mt-6 max-w-prose text-[16px] text-gray-500">
+          Our primary operational footprint sits within the expanding sub-counties of
+          Machakos, but we extend work nationally where project scale warrants it.
+        </p>
+
+        <div class="mt-9 p-6 rounded-2xl bg-white border-l-2 border-brand-blue">
+          <span class="eyebrow text-gray-400">Outside Machakos</span>
+          <p class="mt-3 text-[14px] text-gray-500">
+            National projects are quoted with field logistics included, so there are no
+            surprises on travel cost.
+          </p>
+        </div>
+      </div>
+
+      <div class="lg:col-span-7">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+          <div class="p-6 rounded-xl bg-white border-l-2 border-brand-blue">
+            <h4>Mavoko Sub-County</h4>
+            <p class="mt-2 text-[13px] text-gray-500">Athi River · Syokimau · Mlolongo · Katani</p>
+          </div>
+
+          <div class="p-6 rounded-xl bg-white border-l-2 border-brand-yellow">
+            <h4>Kangundo Road Corridor</h4>
+            <p class="mt-2 text-[13px] text-gray-500">Joska · Malaa · Kangundo</p>
+          </div>
+
+          <div class="p-6 rounded-xl bg-white border-l-2 border-brand-red">
+            <h4>Machakos Central</h4>
+            <p class="mt-2 text-[13px] text-gray-500">Machakos Town &amp; surrounding peri-urban zones</p>
+          </div>
+
+          <div class="p-6 rounded-xl bg-white border-l-2 border-brand-blue">
+            <h4>Matungulu</h4>
+            <p class="mt-2 text-[13px] text-gray-500">Matuu · Tala · surrounding subdivisions</p>
+          </div>
+
+          <div class="p-6 rounded-xl bg-white border-l-2 border-gray-300">
+            <h4>Yatta &amp; Masinga</h4>
+            <p class="mt-2 text-[13px] text-gray-500">Extended mapping and planning support</p>
+          </div>
+
+          <div class="p-6 rounded-xl bg-white border-l-2 border-gray-300">
+            <h4>National Projects</h4>
+            <p class="mt-2 text-[13px] text-gray-500">Selected engagements across Kenya</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     QUICK FAQ
+============================================================ -->
+<section class="py-24 lg:py-28 bg-white border-t border-black/[0.06]">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+
+      <div class="lg:col-span-4">
+        <span class="eyebrow text-brand-blue">Before You Write</span>
+        <h2 class="mt-5 max-w-[16ch]">Quick Answers</h2>
+        <p class="mt-6 max-w-prose text-[15px] text-gray-500">
+          A few things that help us respond faster and more accurately.
+        </p>
+      </div>
+
+      <div class="lg:col-span-8">
+        <div class="space-y-3">
+
+          <details class="group bg-brand-mist rounded-2xl border border-black/[0.05] open:border-brand-blue/40 open:bg-white open:shadow-[0_20px_48px_-28px_rgba(44,178,226,.5)] transition-all duration-400">
+            <summary class="flex items-start justify-between gap-6 cursor-pointer list-none p-7">
+              <h4 class="text-[17px] pr-4">What information should I include in my enquiry?</h4>
+              <span class="shrink-0 mt-1 text-brand-blue transition-transform duration-300 group-open:rotate-45">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/>
+                </svg>
+              </span>
+            </summary>
+            <div class="px-7 pb-7 -mt-1">
+              <p class="text-[14px] text-gray-500 max-w-prose">
+                At minimum: the plot or L.R. number, the sub-county or nearest town, and
+                a short description of what you want to do. If you have a title deed,
+                deed plan, previous approvals or correspondence, mention it — we will
+                ask you to share it at the next stage.
+              </p>
+            </div>
+          </details>
+
+          <details class="group bg-brand-mist rounded-2xl border border-black/[0.05] open:border-brand-blue/40 open:bg-white open:shadow-[0_20px_48px_-28px_rgba(44,178,226,.5)] transition-all duration-400">
+            <summary class="flex items-start justify-between gap-6 cursor-pointer list-none p-7">
+              <h4 class="text-[17px] pr-4">Do you give indicative costs before a site visit?</h4>
+              <span class="shrink-0 mt-1 text-brand-blue transition-transform duration-300 group-open:rotate-45">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/>
+                </svg>
+              </span>
+            </summary>
+            <div class="px-7 pb-7 -mt-1">
+              <p class="text-[14px] text-gray-500 max-w-prose">
+                Yes — for most standard scopes, we can provide a cost band based on your
+                location and project type without a site visit. Final figures are
+                confirmed after field assessment.
+              </p>
+            </div>
+          </details>
+
+          <details class="group bg-brand-mist rounded-2xl border border-black/[0.05] open:border-brand-blue/40 open:bg-white open:shadow-[0_20px_48px_-28px_rgba(44,178,226,.5)] transition-all duration-400">
+            <summary class="flex items-start justify-between gap-6 cursor-pointer list-none p-7">
+              <h4 class="text-[17px] pr-4">Can I send documents before we have agreed on scope?</h4>
+              <span class="shrink-0 mt-1 text-brand-blue transition-transform duration-300 group-open:rotate-45">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/>
+                </svg>
+              </span>
+            </summary>
+            <div class="px-7 pb-7 -mt-1">
+              <p class="text-[14px] text-gray-500 max-w-prose">
+                Yes. Send them to the official email address, and mention in the enquiry
+                that you have already sent documentation. This shortens the scoping
+                stage considerably.
+              </p>
+            </div>
+          </details>
+
+          <details class="group bg-brand-mist rounded-2xl border border-black/[0.05] open:border-brand-blue/40 open:bg-white open:shadow-[0_20px_48px_-28px_rgba(44,178,226,.5)] transition-all duration-400">
+            <summary class="flex items-start justify-between gap-6 cursor-pointer list-none p-7">
+              <h4 class="text-[17px] pr-4">Do you handle urgent or time-sensitive projects?</h4>
+              <span class="shrink-0 mt-1 text-brand-blue transition-transform duration-300 group-open:rotate-45">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/>
+                </svg>
+              </span>
+            </summary>
+            <div class="px-7 pb-7 -mt-1">
+              <p class="text-[14px] text-gray-500 max-w-prose">
+                Where possible, yes. Flag the urgency clearly in your enquiry and we
+                will tell you honestly whether the timeline you need is achievable
+                given regulatory queues.
+              </p>
+            </div>
+          </details>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     CLOSING STRIP
+============================================================ -->
+<section class="relative py-20 lg:py-24 bg-gradient-to-br from-brand-blue to-[#1F97C4] overflow-hidden">
+  <div class="absolute inset-0 dot-grid opacity-[0.18] pointer-events-none"></div>
+
+  <div class="relative max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
+
+      <div class="max-w-2xl">
+        <span class="eyebrow text-white/70">One Accountability</span>
+        <h2 class="mt-4 text-white max-w-[24ch]">
+          Planning, Mapping and Environmental Compliance — Under One Roof.
+        </h2>
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-4 shrink-0">
+        <a href="#quote-form" class="btn btn-accent">Start Your Enquiry</a>
+        <a href="services.html" class="btn btn-dark-ghost">Review Services</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer class="relative bg-[#15181B] text-gray-400 pt-20 pb-9 overflow-hidden">
+  <div class="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-brand-blue via-brand-yellow to-brand-red"></div>
+
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-12 pb-14 border-b border-white/[0.07]">
+
+      <div class="md:col-span-4">
+        <img src="/assets/geoleric-logo.png"
+             alt="GeoLeric Consultants" width="170" height="45"
+             class="h-10 w-auto object-contain brightness-0 invert opacity-90">
+        <p class="mt-6 max-w-xs text-[13px] font-light leading-relaxed text-gray-500">
+          Registered built environment specialists delivering high-precision land use
+          frameworks, geographic data modelling and strict NEMA-compliant clearances
+          across Kenya.
+        </p>
+        <div class="mt-7 flex flex-wrap items-center gap-3">
+          <span class="text-[10px] font-medium tracking-[0.18em] uppercase border border-white/15 text-gray-500 px-3 py-1.5 rounded-md">NEMA EIA / Audit</span>
+          <span class="text-[10px] font-medium tracking-[0.18em] uppercase border border-white/15 text-gray-500 px-3 py-1.5 rounded-md">PPRB Registered</span>
+        </div>
+      </div>
+
+      <div class="md:col-span-3">
+        <h4 class="text-white text-[15px]">Company</h4>
+        <ul class="mt-5 space-y-3 text-[13px] font-light">
+          <li><a href="index.html" class="hover:text-brand-blue transition-colors duration-300">Home</a></li>
+          <li><a href="about.html" class="hover:text-brand-blue transition-colors duration-300">Corporate Profile</a></li>
+          <li><a href="index.html#footprint" class="hover:text-brand-blue transition-colors duration-300">Regional Footprint</a></li>
+          <li><a href="contact.html" class="text-gray-300 hover:text-brand-blue transition-colors duration-300">Consultation Desk</a></li>
+        </ul>
+      </div>
+
+      <div class="md:col-span-3">
+        <h4 class="text-white text-[15px]">Technical Practice</h4>
+        <ul class="mt-5 space-y-3 text-[13px] font-light">
+          <li><a href="services.html#planning" class="hover:text-brand-blue transition-colors duration-300">Physical &amp; Spatial Planning</a></li>
+          <li><a href="services.html#gis" class="hover:text-brand-blue transition-colors duration-300">GIS Terrain Mapping</a></li>
+          <li><a href="services.html#environmental" class="hover:text-brand-blue transition-colors duration-300">Environmental Compliance</a></li>
+        </ul>
+      </div>
+
+      <div class="md:col-span-2">
+        <h4 class="text-white text-[15px]">Official Gateway</h4>
+        <p class="mt-5 text-[13px] font-light leading-relaxed text-gray-500">
+          Machakos County, Kenya.
+          <a href="mailto:info@geolericconsultancy.co.ke"
+             class="block mt-2 text-white font-normal hover:text-brand-blue transition-colors duration-300 break-all">
+            info@geolericconsultancy.co.ke
+          </a>
+        </p>
+      </div>
+
+    </div>
+
+    <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-5">
+      <p class="text-[11px] font-normal tracking-[0.14em] uppercase text-gray-600">
+        &copy; <span id="current-year"></span> GeoLeric Consultants. All Rights Reserved.
+      </p>
+
+      <p class="text-[11px] font-normal tracking-[0.14em] uppercase text-gray-600 flex items-center gap-1.5">
+        Designed &amp; Developed by
+        <a href="https://sarahadevelopers.co.ke" target="_blank" rel="noopener noreferrer"
+           class="text-gray-300 hover:text-brand-blue font-medium tracking-[0.14em] transition-colors duration-300 underline-offset-4 hover:underline">
+          Saraha Developers
+        </a>
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+
+<!-- ============================================================
+     SCRIPTS
+============================================================ -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+
+  /* ---------- Dynamic year ---------- */
+  const yearEl = document.getElementById('current-year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  /* ---------- Mobile drawer ---------- */
+  const drawer   = document.getElementById('mobile-drawer');
+  const overlay  = document.getElementById('drawer-overlay');
+  const content  = document.getElementById('drawer-content');
+  const openBtn  = document.getElementById('mobile-menu-btn');
+  const closeBtn = document.getElementById('close-drawer-btn');
+
+  const openMenu = () => {
+    drawer.classList.remove('pointer-events-none');
+    overlay.classList.replace('opacity-0', 'opacity-100');
+    content.classList.replace('translate-x-full', 'translate-x-0');
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeMenu = () => {
+    drawer.classList.add('pointer-events-none');
+    overlay.classList.replace('opacity-100', 'opacity-0');
+    content.classList.replace('translate-x-0', 'translate-x-full');
+    document.body.style.overflow = '';
+  };
+
+  openBtn?.addEventListener('click', openMenu);
+  closeBtn?.addEventListener('click', closeMenu);
+  overlay?.addEventListener('click', closeMenu);
+
+  content?.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && !drawer.classList.contains('pointer-events-none')) closeMenu();
+  });
+
+  /* ---------- FAQ: only one open at a time ---------- */
+  const faqs = document.querySelectorAll('details.group');
+  faqs.forEach(detail => {
+    detail.addEventListener('toggle', () => {
+      if (detail.open) {
+        faqs.forEach(other => {
+          if (other !== detail && other.open) other.open = false;
+        });
+      }
+    });
+  });
+
+  /* ---------- Contact form validation ---------- */
+  const form   = document.getElementById('contact-form');
+  const status = document.getElementById('form-status');
+
+  const setStatus = (msg, tone) => {
+    status.textContent = msg;
+    status.className = 'mt-4 text-center text-[13px] font-light ' +
+      (tone === 'error' ? 'text-brand-red' : tone === 'ok' ? 'text-brand-blue' : 'text-gray-500');
+  };
+
+  form?.addEventListener('submit', e => {
+    e.preventDefault();
+
+    const name    = form.fullname.value.trim();
+    const phone   = form.phone.value.trim();
+    const email   = form.email.value.trim();
+    const consent = form.consent.checked;
+
+    const phoneOk = /^[+()\d\s-]{9,}$/.test(phone);
+    const emailOk = email === '' || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+    if (name.length < 2) {
+      setStatus('Please enter your full name or corporate entity.', 'error');
+      form.fullname.focus();
+      return;
+    }
+    if (!phoneOk) {
+      setStatus('Please enter a valid phone or WhatsApp number.', 'error');
+      form.phone.focus();
+      return;
+    }
+    if (!emailOk) {
+      setStatus('Please enter a valid email address, or leave the field blank.', 'error');
+      form.email.focus();
+      return;
+    }
+    if (!consent) {
+      setStatus('Please confirm you consent to us storing your enquiry details.', 'error');
+      form.consent.focus();
+      return;
+    }
+
+    setStatus('Submitting your enquiry…', 'ok');
+
+    /* TODO: connect to your backend endpoint, e.g.
+       fetch('/api/contact', {
+         method: 'POST',
+         headers: { 'Content-Type': 'application/json' },
+         body: JSON.stringify(Object.fromEntries(new FormData(form)))
+       })
+       .then(...) */
+
+    // Placeholder success state (remove when backend is wired up)
+    setTimeout(() => {
+      setStatus('Thank you — your enquiry has been received. We will respond within 24 hours.', 'ok');
+      form.reset();
+    }, 700);
+  });
+
+  /* ---------- Scroll reveal ---------- */
+  if ('IntersectionObserver' in window) {
+    const reveals = document.querySelectorAll('[data-reveal]');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.10, rootMargin: '0px 0px -60px 0px' });
+
+    reveals.forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(18px)';
+      el.style.transition = 'opacity .7s cubic-bezier(.4,0,.2,1), transform .7s cubic-bezier(.4,0,.2,1)';
+      io.observe(el);
+    });
+  }
+
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | GeoLeric Consultants — Physical Planning, GIS &amp; Environmental Experts</title>
+<meta name="description" content="GeoLeric Consultants is a registered built environment consultancy in Machakos County, Kenya — delivering physical planning, GIS mapping, drone surveys and NEMA-compliant environmental audits led by qualified PPRB and NEMA accredited professionals.">
+<meta name="theme-color" content="#2CB2E2">
+
+<!-- ========== FONT: JOST ========== -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+<!-- ========== TAILWIND (Play CDN) ========== -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['Jost', 'ui-sans-serif', 'system-ui', '-apple-system', 'Segoe UI', 'sans-serif'],
+        },
+        colors: {
+          brand: {
+            blue:  '#2CB2E2',
+            yellow:'#FBB03B',
+            red:   '#E61C24',
+            ink:   '#1A1D20',
+            coal:  '#212529',
+            mist:  '#F8F9FA',
+          }
+        },
+        maxWidth: { prose: '62ch' }
+      }
+    }
+  }
+</script>
+
+<!-- ========== PREMIUM TYPE SYSTEM ========== -->
+<style type="text/tailwindcss">
+  @layer base {
+    :root {
+      --fs-h1: 36px;
+      --fs-h2: 28px;
+      --fs-h3: 24px;
+      --fs-h4: 22px;
+      --lh-tight: 1.15;
+      --lh-snug: 1.28;
+      --lh-body: 1.75;
+    }
+
+    html {
+      font-family: 'Jost', ui-sans-serif, system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+      scroll-padding-top: 6rem;
+    }
+
+    body {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: var(--lh-body);
+      color: #212529;
+      background: #FFFFFF;
+    }
+
+    h1, .h1 { font-size: var(--fs-h1); font-weight: 500; line-height: var(--lh-tight); letter-spacing: -0.022em; color: #1A1D20; }
+    h2, .h2 { font-size: var(--fs-h2); font-weight: 500; line-height: 1.22; letter-spacing: -0.018em; color: #1A1D20; }
+    h3, .h3 { font-size: var(--fs-h3); font-weight: 500; line-height: var(--lh-snug); letter-spacing: -0.012em; color: #1A1D20; }
+    h4, h5, h6, .h4 { font-size: var(--fs-h4); font-weight: 500; line-height: 1.35; letter-spacing: -0.008em; color: #1A1D20; }
+
+    p, li, .body-text { font-weight: 300; line-height: var(--lh-body); letter-spacing: 0.004em; }
+
+    p.small, .text-xs, .text-\[11px\] { letter-spacing: 0.015em; }
+
+    ::selection { background: #2CB2E2; color: #FFFFFF; }
+  }
+
+  @layer components {
+    .eyebrow {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      line-height: 1;
+    }
+
+    .nav-link {
+      position: relative;
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: 0.03em;
+      color: #212529;
+      transition: color .3s cubic-bezier(.4,0,.2,1);
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 0; bottom: -7px;
+      width: 100%; height: 1.5px;
+      background: #2CB2E2;
+      transform: scaleX(0);
+      transform-origin: left center;
+      transition: transform .38s cubic-bezier(.4,0,.2,1);
+    }
+    .nav-link:hover { color: #2CB2E2; }
+    .nav-link:hover::after { transform: scaleX(1); }
+    .nav-link.is-active { color: #2CB2E2; }
+    .nav-link.is-active::after { transform: scaleX(1); }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: .55rem;
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: 0.045em;
+      padding: 14px 30px;
+      border-radius: 10px;
+      transition: all .35s cubic-bezier(.4,0,.2,1);
+      will-change: transform;
+    }
+    .btn-primary { background: #E61C24; color: #FFFFFF; box-shadow: 0 8px 22px -10px rgba(230,28,36,.65); }
+    .btn-primary:hover { background: #c8171e; transform: translateY(-2px); box-shadow: 0 16px 30px -12px rgba(230,28,36,.7); }
+    .btn-accent { background: #FBB03B; color: #1A1D20; box-shadow: 0 8px 22px -10px rgba(251,176,59,.7); }
+    .btn-accent:hover { background: #E61C24; color: #FFFFFF; transform: translateY(-2px); box-shadow: 0 16px 30px -12px rgba(230,28,36,.6); }
+    .btn-ghost { background: #FFFFFF; color: #1A1D20; border: 1px solid rgba(33,37,41,.12); }
+    .btn-ghost:hover { border-color: #2CB2E2; color: #2CB2E2; transform: translateY(-2px); }
+
+    .hairline { height: 1px; background: rgba(33,37,41,.08); }
+
+    .dot-grid {
+      background-image: radial-gradient(rgba(44,178,226,.22) 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+
+    .drawer-link {
+      font-size: 17px;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+      color: #FFFFFF;
+      padding: 10px 0;
+      transition: color .3s ease;
+    }
+    .drawer-link:hover { color: #2CB2E2; }
+
+    .drawer-sub {
+      font-size: 14px;
+      font-weight: 300;
+      color: #9CA3AF;
+      padding: 8px 0 8px 14px;
+      border-left: 1px solid rgba(255,255,255,.10);
+      transition: all .3s ease;
+    }
+    .drawer-sub:hover { color: #2CB2E2; border-left-color: #2CB2E2; padding-left: 18px; }
+  }
+</style>
+</head>
+
+<body class="bg-white antialiased">
+
+<!-- ============================================================
+     NAVBAR
+============================================================ -->
+<header class="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-xl border-b border-black/5">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="flex items-center justify-between h-20">
+
+      <a href="/" class="flex items-center gap-3 shrink-0">
+        <img src="/assets/geoleric-logo.png"
+             alt="GeoLeric Consultants — Physical Planning, GIS & Environmental Experts"
+             width="180" height="48" class="h-11 w-auto object-contain">
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-9">
+        <a href="/" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link is-active" aria-current="page">About Us</a>
+
+        <div class="relative group">
+          <button class="nav-link flex items-center gap-1.5 focus:outline-none">
+            Our Services
+            <svg class="w-3.5 h-3.5 transition-transform duration-300 group-hover:rotate-180"
+                 fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+
+          <div class="absolute left-0 top-full pt-5 opacity-0 invisible translate-y-1
+                      group-hover:opacity-100 group-hover:visible group-hover:translate-y-0
+                      transition-all duration-300 ease-out z-50">
+            <div class="w-72 bg-white rounded-2xl border border-black/5 shadow-[0_24px_60px_-24px_rgba(26,29,32,.35)] p-2">
+              <a href="index.html#planning" class="block px-4 py-3.5 rounded-xl hover:bg-brand-mist transition-colors">
+                <span class="block text-[14px] font-medium text-brand-coal">Physical &amp; Spatial Planning</span>
+                <span class="block text-[12px] font-light text-gray-400 mt-0.5">Subdivisions · Change of User · Layouts</span>
+              </a>
+              <a href="index.html#gis" class="block px-4 py-3.5 rounded-xl hover:bg-brand-mist transition-colors">
+                <span class="block text-[14px] font-medium text-brand-coal">GIS Mapping &amp; Analytics</span>
+                <span class="block text-[12px] font-light text-gray-400 mt-0.5">Cadastral · Topography · Drone Surveys</span>
+              </a>
+              <a href="index.html#environmental" class="block px-4 py-3.5 rounded-xl hover:bg-brand-mist transition-colors">
+                <span class="block text-[14px] font-medium text-brand-coal">Environmental Consulting</span>
+                <span class="block text-[12px] font-light text-gray-400 mt-0.5">NEMA EIA · Audits · Effluent Plans</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <a href="index.html#footprint" class="nav-link">Regional Footprint</a>
+        <a href="index.html#contact" class="nav-link">Contact Us</a>
+      </nav>
+
+      <div class="hidden lg:block">
+        <a href="index.html#contact" class="btn btn-accent">Get a Quote</a>
+      </div>
+
+      <button id="mobile-menu-btn" aria-label="Open navigation menu"
+              class="lg:hidden p-2.5 -mr-2 text-brand-coal hover:text-brand-blue transition-colors">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+          <path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+      </button>
+
+    </div>
+  </div>
+</header>
+
+
+<!-- ============================================================
+     MOBILE DRAWER
+============================================================ -->
+<div id="mobile-drawer" class="fixed inset-0 z-[60] pointer-events-none">
+  <div id="drawer-overlay" class="absolute inset-0 bg-brand-ink/50 backdrop-blur-sm opacity-0 transition-opacity duration-400"></div>
+
+  <aside id="drawer-content"
+         class="absolute right-0 top-0 bottom-0 w-[86%] max-w-sm bg-brand-ink
+                translate-x-full transition-transform duration-400 ease-[cubic-bezier(.4,0,.2,1)]
+                flex flex-col justify-between p-7 shadow-2xl">
+
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-white/10">
+        <span class="eyebrow text-brand-blue">Navigation</span>
+        <button id="close-drawer-btn" aria-label="Close navigation menu"
+                class="text-gray-400 hover:text-white p-1 transition-colors">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+            <path stroke-linecap="round" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="flex flex-col mt-8 gap-1">
+        <a href="index.html" class="drawer-link">Home</a>
+        <a href="about.html" class="drawer-link">About Us</a>
+
+        <div class="mt-5 mb-2">
+          <span class="eyebrow text-gray-500">Our Services</span>
+        </div>
+        <a href="index.html#planning" class="drawer-sub">Physical &amp; Spatial Planning</a>
+        <a href="index.html#gis" class="drawer-sub">GIS Mapping &amp; Analytics</a>
+        <a href="index.html#environmental" class="drawer-sub">Environmental Consulting</a>
+
+        <div class="hairline my-5 bg-white/10"></div>
+        <a href="index.html#footprint" class="drawer-link">Regional Footprint</a>
+        <a href="index.html#contact" class="drawer-link">Contact Us</a>
+      </nav>
+    </div>
+
+    <a href="index.html#contact" class="btn btn-accent w-full">Get a Quote</a>
+  </aside>
+</div>
+
+
+<!-- ============================================================
+     PAGE HERO
+============================================================ -->
+<section class="relative overflow-hidden bg-gradient-to-br from-white via-brand-mist to-brand-blue/[0.07] border-b border-black/[0.05]">
+  <div class="absolute inset-0 dot-grid opacity-[0.35] pointer-events-none"></div>
+
+  <div class="relative max-w-7xl mx-auto px-5 sm:px-8 py-20 lg:py-28">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
+
+      <div class="lg:col-span-8">
+        <!-- Breadcrumb -->
+        <nav aria-label="Breadcrumb" class="flex items-center gap-2 text-[12px] font-light text-gray-400">
+          <a href="index.html" class="hover:text-brand-blue transition-colors duration-300">Home</a>
+          <span class="text-gray-300">/</span>
+          <span class="text-brand-coal font-normal">About Us</span>
+        </nav>
+
+        <span class="mt-8 eyebrow inline-flex items-center gap-2 text-brand-blue">
+          <span class="w-6 h-px bg-brand-blue"></span>
+          Corporate Profile
+        </span>
+
+        <h1 class="mt-6 max-w-[20ch]">
+          Built Environment Consultants with a
+          <span class="text-brand-blue">Local Ground Truth.</span>
+        </h1>
+
+        <p class="mt-7 max-w-prose text-[17px] text-gray-500">
+          GeoLeric Consultants is a registered physical planning, GIS mapping and
+          environmental consultancy operating from Machakos County — bridging national
+          regulatory frameworks with the realities of a rapidly developing landscape.
+        </p>
+      </div>
+
+      <!-- Quick facts rail -->
+      <div class="lg:col-span-4 lg:pl-10 lg:border-l lg:border-black/[0.08]">
+        <div class="grid grid-cols-2 lg:grid-cols-1 gap-6">
+          <div>
+            <p class="text-[28px] font-medium text-brand-ink leading-none">3</p>
+            <p class="mt-2 text-[12px] font-light text-gray-400 leading-snug">Integrated practice areas under one firm</p>
+          </div>
+          <div>
+            <p class="text-[28px] font-medium text-brand-ink leading-none">6+</p>
+            <p class="mt-2 text-[12px] font-light text-gray-400 leading-snug">Sub-counties and growth corridors actively served</p>
+          </div>
+          <div>
+            <p class="text-[28px] font-medium text-brand-ink leading-none">100%</p>
+            <p class="mt-2 text-[12px] font-light text-gray-400 leading-snug">NEMA &amp; PPRB aligned project delivery</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     WHO WE ARE
+============================================================ -->
+<section class="py-24 lg:py-32 bg-white">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+
+      <!-- Visual -->
+      <div class="lg:col-span-5 order-2 lg:order-1">
+        <div class="relative">
+          <div class="absolute -top-6 -right-6 w-56 h-56 rounded-full bg-brand-blue/15 blur-3xl"></div>
+          <div class="absolute -bottom-6 -left-6 w-56 h-56 rounded-full bg-brand-yellow/20 blur-3xl"></div>
+
+          <div class="relative rounded-[20px] overflow-hidden border-[6px] border-white shadow-[0_40px_80px_-40px_rgba(26,29,32,.45)] aspect-[4/5] bg-brand-mist">
+            <img src="/assets/team-fieldwork.jpg"
+                 alt="GeoLeric Consultants team conducting a field survey in Machakos County"
+                 width="640" height="800"
+                 class="w-full h-full object-cover">
+          </div>
+
+          <div class="absolute -right-6 bottom-12 bg-white/95 backdrop-blur rounded-2xl border border-black/5 shadow-xl px-5 py-4">
+            <span class="eyebrow text-gray-400">Based In</span>
+            <p class="mt-1.5 text-[18px] font-medium text-brand-ink leading-none">Machakos</p>
+            <p class="text-[11px] font-light text-gray-400 mt-1">County, Kenya</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copy -->
+      <div class="lg:col-span-7 order-1 lg:order-2">
+        <span class="eyebrow text-brand-blue">Who We Are</span>
+        <h2 class="mt-5 max-w-[22ch]">A Consultancy Built Around Precision, Compliance and Local Context.</h2>
+
+        <div class="mt-8 space-y-5 max-w-prose text-[16px] text-gray-500">
+          <p>
+            GeoLeric Consultants is a professional physical planning, GIS mapping and
+            environmental consultancy operating under executive leadership in Machakos
+            County, Kenya. We specialise in urban development, land use and applied
+            environmental science — translating spatial data into decisions that hold up
+            before county authorities and national regulators alike.
+          </p>
+          <p>
+            Our work sits at the intersection of three disciplines that are usually
+            handled separately: physical planning and zoning, geographic information
+            systems, and environmental management. By holding all three in-house, we
+            remove the friction that developers, landowners and municipal clients
+            normally absorb when coordinating between multiple consultants.
+          </p>
+          <p>
+            From structural layout design and cadastral boundary verification to
+            Environmental Impact Assessments and annual waste audits, every deliverable
+            is produced to NEMA and county submission standards — the first time.
+          </p>
+        </div>
+
+        <!-- Signature detail row -->
+        <div class="mt-10 pt-8 border-t border-black/[0.07] grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <div>
+            <h4 class="text-[15px]">Data-Led</h4>
+            <p class="mt-2 text-[13px] text-gray-500 leading-relaxed">Every recommendation is grounded in measured spatial data, not estimation.</p>
+          </div>
+          <div>
+            <h4 class="text-[15px]">Compliance-First</h4>
+            <p class="mt-2 text-[13px] text-gray-500 leading-relaxed">Submissions engineered to clear PPRB, county and NEMA review cycles.</p>
+          </div>
+          <div>
+            <h4 class="text-[15px]">Locally Anchored</h4>
+            <p class="mt-2 text-[13px] text-gray-500 leading-relaxed">Deep working knowledge of Machakos zoning bylaws and growth corridors.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     MISSION / VISION / VALUES
+============================================================ -->
+<section class="py-24 lg:py-32 bg-brand-mist">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+
+    <div class="max-w-2xl">
+      <span class="eyebrow text-brand-blue">What Drives Us</span>
+      <h2 class="mt-5">Mission, Vision &amp; Operating Principles</h2>
+      <p class="mt-5 text-[16px] text-gray-500">
+        The framework behind how we scope, deliver and sign off on every project we take on.
+      </p>
+    </div>
+
+    <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-7">
+
+      <!-- Mission -->
+      <article class="group bg-white rounded-2xl p-9 border border-black/[0.06] hover:border-brand-blue/40 hover:shadow-[0_32px_64px_-32px_rgba(44,178,226,.45)] hover:-translate-y-1.5 transition-all duration-500 ease-out">
+        <div class="w-12 h-12 rounded-xl bg-brand-blue/10 text-brand-blue flex items-center justify-center group-hover:bg-brand-blue group-hover:text-white transition-colors duration-500">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 2v4m0 12v4M2 12h4m12 0h4M6.34 6.34l2.83 2.83m5.66 5.66l2.83 2.83m0-11.32l-2.83 2.83m-5.66 5.66l-2.83 2.83"/>
+          </svg>
+        </div>
+        <h3 class="mt-7">Our Mission</h3>
+        <p class="mt-5 text-[15px] text-gray-500">
+          To provide high-accuracy, data-driven geographic and spatial solutions that
+          seamlessly bridge infrastructure demand with environmental preservation —
+          ensuring that development in growing regions remains orderly, legal and
+          sustainable.
+        </p>
+      </article>
+
+      <!-- Vision -->
+      <article class="group bg-white rounded-2xl p-9 border border-black/[0.06] hover:border-brand-blue/40 hover:shadow-[0_32px_64px_-32px_rgba(44,178,226,.45)] hover:-translate-y-1.5 transition-all duration-500 ease-out">
+        <div class="w-12 h-12 rounded-xl bg-brand-blue/10 text-brand-blue flex items-center justify-center group-hover:bg-brand-blue group-hover:text-white transition-colors duration-500">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+          </svg>
+        </div>
+        <h3 class="mt-7">Our Vision</h3>
+        <p class="mt-5 text-[15px] text-gray-500">
+          To be the reference consultancy for spatial and environmental integrity across
+          Kenya's emerging development corridors — recognised for the technical rigour
+          of our mapping and the reliability of our regulatory submissions.
+        </p>
+      </article>
+
+      <!-- Principles -->
+      <article class="group bg-white rounded-2xl p-9 border border-black/[0.06] hover:border-brand-blue/40 hover:shadow-[0_32px_64px_-32px_rgba(44,178,226,.45)] hover:-translate-y-1.5 transition-all duration-500 ease-out">
+        <div class="w-12 h-12 rounded-xl bg-brand-blue/10 text-brand-blue flex items-center justify-center group-hover:bg-brand-blue group-hover:text-white transition-colors duration-500">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+        </div>
+        <h3 class="mt-7">Our Principles</h3>
+        <ul class="mt-5 space-y-3 text-[15px] text-gray-500">
+          <li class="flex gap-3"><span class="mt-2 w-1 h-1 rounded-full bg-brand-yellow shrink-0"></span> Measured accuracy over assumption</li>
+          <li class="flex gap-3"><span class="mt-2 w-1 h-1 rounded-full bg-brand-yellow shrink-0"></span> Full regulatory transparency</li>
+          <li class="flex gap-3"><span class="mt-2 w-1 h-1 rounded-full bg-brand-yellow shrink-0"></span> Environmental responsibility</li>
+          <li class="flex gap-3"><span class="mt-2 w-1 h-1 rounded-full bg-brand-yellow shrink-0"></span> Clear, plain-language client reporting</li>
+        </ul>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     LEADERSHIP
+============================================================ -->
+<section id="leadership" class="py-24 lg:py-32 bg-white border-b border-black/[0.06]">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+
+    <div class="max-w-2xl">
+      <span class="eyebrow text-brand-blue">Leadership</span>
+      <h2 class="mt-5">Executive &amp; Technical Direction</h2>
+      <p class="mt-5 text-[16px] text-gray-500">
+        GeoLeric Consultants is led by a practising specialist who combines physical
+        planning, GIS analysis and environmental management in a single operational
+        mandate.
+      </p>
+    </div>
+
+    <div class="mt-16 grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+
+      <!-- Profile card -->
+      <div class="lg:col-span-5">
+        <div class="relative rounded-2xl overflow-hidden border border-black/[0.06] bg-brand-mist">
+          <div class="aspect-[4/5] w-full overflow-hidden bg-gray-200">
+            <img src="/assets/kelvin-kalei.jpg"
+                 alt="Kelvin Kalei — Physical Planner, GIS Analyst and Environmental Expert at GeoLeric Consultants"
+                 width="640" height="800"
+                 class="w-full h-full object-cover">
+          </div>
+
+          <div class="absolute bottom-0 left-0 right-0 p-7 bg-gradient-to-t from-brand-ink/95 via-brand-ink/70 to-transparent">
+            <h3 class="text-white">Kelvin Kalei</h3>
+            <p class="mt-2 text-[13px] font-light text-brand-blue">
+              Physical Planner · GIS Analyst · Environmental Expert
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Profile detail -->
+      <div class="lg:col-span-7 lg:pl-6">
+        <span class="eyebrow text-gray-400">Executive Lead</span>
+        <h3 class="mt-4">Practising Across the Full Built-Environment Stack</h3>
+
+        <div class="mt-7 space-y-5 max-w-prose text-[16px] text-gray-500">
+          <p>
+            GeoLeric Consultants operates under the executive leadership of Kelvin Kalei,
+            a physical planner, GIS analyst and environmental expert with applied
+            experience in land subdivision, spatial data management and regulatory
+            environmental compliance.
+          </p>
+          <p>
+            His practice is grounded in the Waste and Environment Management Centre
+            framework and extends across cadastral surveying, urban and regional
+            planning, and land engineering workflows — allowing the firm to advise on a
+            project from initial parcel assessment through to final NEMA licensing.
+          </p>
+        </div>
+
+        <!-- Competency tags -->
+        <div class="mt-9">
+          <span class="eyebrow text-gray-400">Core Competencies</span>
+          <div class="mt-5 flex flex-wrap gap-2.5">
+            <span class="px-3.5 py-2 rounded-lg bg-brand-mist border border-black/[0.06] text-[13px] font-normal text-brand-coal">Physical Planning</span>
+            <span class="px-3.5 py-2 rounded-lg bg-brand-mist border border-black/[0.06] text-[13px] font-normal text-brand-coal">GIS Analysis</span>
+            <span class="px-3.5 py-2 rounded-lg bg-brand-mist border border-black/[0.06] text-[13px] font-normal text-brand-coal">Cadastral Surveying</span>
+            <span class="px-3.5 py-2 rounded-lg bg-brand-mist border border-black/[0.06] text-[13px] font-normal text-brand-coal">Urban &amp; Regional Planning</span>
+            <span class="px-3.5 py-2 rounded-lg bg-brand-mist border border-black/[0.06] text-[13px] font-normal text-brand-coal">Land Engineering</span>
+            <span class="px-3.5 py-2 rounded-lg bg-brand-mist border border-black/[0.06] text-[13px] font-normal text-brand-coal">Waste &amp; Environment Management</span>
+            <span class="px-3.5 py-2 rounded-lg bg-brand-mist border border-black/[0.06] text-[13px] font-normal text-brand-coal">Environmental Impact Assessment</span>
+          </div>
+        </div>
+
+        <div class="mt-10 pt-8 border-t border-black/[0.07] flex flex-wrap items-center gap-x-10 gap-y-4">
+          <div>
+            <span class="eyebrow text-gray-400">Accreditation Pathway</span>
+            <p class="mt-2 text-[14px] text-gray-500">Physical Planners Registration Board (PPRB)</p>
+          </div>
+          <div>
+            <span class="eyebrow text-gray-400">Environmental Framework</span>
+            <p class="mt-2 text-[14px] text-gray-500">NEMA EIA / Audit Licensed Practice</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     TECHNICAL CAPABILITY
+============================================================ -->
+<section class="py-24 lg:py-32 bg-brand-ink text-white relative overflow-hidden">
+  <div class="absolute inset-0 dot-grid opacity-[0.10] pointer-events-none"></div>
+  <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-brand-blue/[0.08] blur-3xl pointer-events-none"></div>
+
+  <div class="relative max-w-7xl mx-auto px-5 sm:px-8">
+
+    <div class="max-w-2xl">
+      <span class="eyebrow text-brand-blue">Technical Capability</span>
+      <h2 class="mt-5 text-white">The Instruments Behind the Accuracy</h2>
+      <p class="mt-5 text-[16px] font-light text-gray-400">
+        Precision in spatial consulting is a function of tooling. Our workflows run on
+        industry-standard geospatial software and field-grade surveying hardware.
+      </p>
+    </div>
+
+    <div class="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+      <!-- Software stack -->
+      <div class="rounded-2xl border border-white/10 bg-white/[0.04] backdrop-blur-sm p-9">
+        <div class="flex items-center gap-4">
+          <div class="w-11 h-11 rounded-xl bg-brand-blue/15 text-brand-blue flex items-center justify-center">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+          </div>
+          <h3 class="text-white">Software Stack</h3>
+        </div>
+
+        <p class="mt-6 text-[14px] font-light text-gray-400">
+          Industry-standard geospatial and drafting platforms used across every
+          deliverable.
+        </p>
+
+        <div class="mt-8 space-y-0">
+          <div class="flex items-center justify-between py-4 border-b border-white/[0.07]">
+            <span class="text-[15px] font-normal text-white">ArcGIS</span>
+            <span class="text-[12px] font-light text-gray-500">Spatial analysis &amp; geodatabase management</span>
+          </div>
+          <div class="flex items-center justify-between py-4 border-b border-white/[0.07]">
+            <span class="text-[15px] font-normal text-white">QGIS</span>
+            <span class="text-[12px] font-light text-gray-500">Open-source mapping &amp; raster processing</span>
+          </div>
+          <div class="flex items-center justify-between py-4 border-b border-white/[0.07]">
+            <span class="text-[15px] font-normal text-white">AutoCAD Map 3D</span>
+            <span class="text-[12px] font-light text-gray-500">Layout drafting &amp; structural design</span>
+          </div>
+          <div class="flex items-center justify-between py-4">
+            <span class="text-[15px] font-normal text-white">Drone Photogrammetry</span>
+            <span class="text-[12px] font-light text-gray-500">Orthomosaic &amp; terrain model generation</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Field hardware -->
+      <div class="rounded-2xl border border-white/10 bg-white/[0.04] backdrop-blur-sm p-9">
+        <div class="flex items-center gap-4">
+          <div class="w-11 h-11 rounded-xl bg-brand-yellow/15 text-brand-yellow flex items-center justify-center">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1.5m0 15V21m9-9h-1.5m-15 0H3m15.364-6.364l-1.06 1.06M6.697 17.303l-1.06 1.06m0-12.728l1.06 1.06m10.606 10.606l1.06 1.06M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+          </div>
+          <h3 class="text-white">Field Instrumentation</h3>
+        </div>
+
+        <p class="mt-6 text-[14px] font-light text-gray-400">
+          Survey-grade equipment deployed for boundary verification, topographic capture
+          and construction setting-out.
+        </p>
+
+        <div class="mt-8 space-y-0">
+          <div class="flex items-center justify-between py-4 border-b border-white/[0.07]">
+            <span class="text-[15px] font-normal text-white">RTK GNSS Rovers</span>
+            <span class="text-[12px] font-light text-gray-500">Centimetre-level positioning</span>
+          </div>
+          <div class="flex items-center justify-between py-4 border-b border-white/[0.07]">
+            <span class="text-[15px] font-normal text-white">Total Stations</span>
+            <span class="text-[12px] font-light text-gray-500">Angular &amp; distance measurement</span>
+          </div>
+          <div class="flex items-center justify-between py-4 border-b border-white/[0.07]">
+            <span class="text-[15px] font-normal text-white">Mapping Drones (UAV)</span>
+            <span class="text-[12px] font-light text-gray-500">Aerial survey &amp; site progress capture</span>
+          </div>
+          <div class="flex items-center justify-between py-4">
+            <span class="text-[15px] font-normal text-white">Digital Levelling</span>
+            <span class="text-[12px] font-light text-gray-500">Elevation &amp; drainage profiling</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     ACCREDITATIONS & COMPLIANCE
+============================================================ -->
+<section class="py-24 lg:py-32 bg-white">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+
+      <div class="lg:col-span-5">
+        <span class="eyebrow text-brand-red">Accreditation &amp; Compliance</span>
+        <h2 class="mt-5 max-w-[20ch]">Registered, Licensed and Accountable.</h2>
+        <p class="mt-6 max-w-prose text-[16px] text-gray-500">
+          In Kenya, land planning and environmental consulting are regulated
+          professions. Our submissions carry the weight of formal registration — not
+          informal opinion.
+        </p>
+
+        <div class="mt-9 p-6 rounded-2xl bg-brand-mist border-l-2 border-brand-blue">
+          <span class="eyebrow text-gray-400">Data Handling</span>
+          <p class="mt-3 text-[14px] text-gray-500">
+            Client documents, land parcel records and personal data submitted through
+            this website are handled in line with Kenya's Data Protection Act.
+          </p>
+        </div>
+      </div>
+
+      <div class="lg:col-span-7">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+
+          <div class="p-8 rounded-2xl border border-black/[0.07] hover:border-brand-blue/40 transition-colors duration-400">
+            <div class="w-11 h-11 rounded-xl bg-brand-blue/10 text-brand-blue flex items-center justify-center">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+              </svg>
+            </div>
+            <h4 class="mt-6 text-[17px]">PPRB Registered</h4>
+            <p class="mt-3 text-[14px] text-gray-500">
+              Practising physical planners registered with the Physical Planners
+              Registration Board of Kenya.
+            </p>
+          </div>
+
+          <div class="p-8 rounded-2xl border border-black/[0.07] hover:border-brand-blue/40 transition-colors duration-400">
+            <div class="w-11 h-11 rounded-xl bg-brand-blue/10 text-brand-blue flex items-center justify-center">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3l7.5 4v5c0 4.5-3.2 7.8-7.5 9-4.3-1.2-7.5-4.5-7.5-9V7L12 3z"/>
+              </svg>
+            </div>
+            <h4 class="mt-6 text-[17px]">NEMA Accredited</h4>
+            <p class="mt-3 text-[14px] text-gray-500">
+              Environmental experts licensed to conduct EIAs, environmental audits and
+              effluent discharge planning.
+            </p>
+          </div>
+
+          <div class="p-8 rounded-2xl border border-black/[0.07] hover:border-brand-blue/40 transition-colors duration-400">
+            <div class="w-11 h-11 rounded-xl bg-brand-blue/10 text-brand-blue flex items-center justify-center">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+              </svg>
+            </div>
+            <h4 class="mt-6 text-[17px]">County Alignment</h4>
+            <p class="mt-3 text-[14px] text-gray-500">
+              Working familiarity with Machakos County zoning bylaws, approval processes
+              and submission requirements.
+            </p>
+          </div>
+
+          <div class="p-8 rounded-2xl border border-black/[0.07] hover:border-brand-blue/40 transition-colors duration-400">
+            <div class="w-11 h-11 rounded-xl bg-brand-blue/10 text-brand-blue flex items-center justify-center">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"/>
+              </svg>
+            </div>
+            <h4 class="mt-6 text-[17px]">Digital Records</h4>
+            <p class="mt-3 text-[14px] text-gray-500">
+              Geodatabase-backed project archives supporting future re-submission,
+              verification and reference.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     CLOSING CTA
+============================================================ -->
+<section class="relative py-24 lg:py-28 bg-gradient-to-br from-brand-blue to-[#1F97C4] overflow-hidden">
+  <div class="absolute inset-0 dot-grid opacity-[0.18] pointer-events-none"></div>
+
+  <div class="relative max-w-4xl mx-auto px-5 sm:px-8 text-center">
+    <span class="eyebrow text-white/70">Let's Work Together</span>
+    <h2 class="mt-5 text-white max-w-[24ch] mx-auto">
+      Ready to Put Your Land Project on Solid Technical Ground?
+    </h2>
+    <p class="mt-6 max-w-prose mx-auto text-[16px] font-light text-white/85">
+      Whether you are subdividing a single parcel along the Kangundo Road corridor or
+      master-planning an industrial site in Mavoko, our team can scope the full
+      planning, mapping and compliance pathway for you.
+    </p>
+
+    <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="index.html#contact" class="btn btn-accent">Request a Consultation</a>
+      <a href="index.html#services" class="btn bg-white/10 text-white border border-white/25 hover:bg-white hover:text-brand-ink transition-all duration-300">
+        Review Our Services
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer class="relative bg-[#15181B] text-gray-400 pt-20 pb-9 overflow-hidden">
+  <div class="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-brand-blue via-brand-yellow to-brand-red"></div>
+
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-12 pb-14 border-b border-white/[0.07]">
+
+      <div class="md:col-span-4">
+        <img src="/assets/geoleric-logo.png"
+             alt="GeoLeric Consultants" width="170" height="45"
+             class="h-10 w-auto object-contain brightness-0 invert opacity-90">
+        <p class="mt-6 max-w-xs text-[13px] font-light leading-relaxed text-gray-500">
+          Registered built environment specialists delivering high-precision land use
+          frameworks, geographic data modelling and strict NEMA-compliant clearances
+          across Kenya.
+        </p>
+        <div class="mt-7 flex flex-wrap items-center gap-3">
+          <span class="text-[10px] font-medium tracking-[0.18em] uppercase border border-white/15 text-gray-500 px-3 py-1.5 rounded-md">NEMA EIA / Audit</span>
+          <span class="text-[10px] font-medium tracking-[0.18em] uppercase border border-white/15 text-gray-500 px-3 py-1.5 rounded-md">PPRB Registered</span>
+        </div>
+      </div>
+
+      <div class="md:col-span-3">
+        <h4 class="text-white text-[15px]">Company</h4>
+        <ul class="mt-5 space-y-3 text-[13px] font-light">
+          <li><a href="index.html" class="hover:text-brand-blue transition-colors duration-300">Home</a></li>
+          <li><a href="about.html" class="text-gray-300 hover:text-brand-blue transition-colors duration-300">Corporate Profile</a></li>
+          <li><a href="index.html#footprint" class="hover:text-brand-blue transition-colors duration-300">Regional Footprint</a></li>
+          <li><a href="index.html#contact" class="hover:text-brand-blue transition-colors duration-300">Consultation Desk</a></li>
+        </ul>
+      </div>
+
+      <div class="md:col-span-3">
+        <h4 class="text-white text-[15px]">Technical Practice</h4>
+        <ul class="mt-5 space-y-3 text-[13px] font-light">
+          <li><a href="index.html#planning" class="hover:text-brand-blue transition-colors duration-300">Physical &amp; Spatial Planning</a></li>
+          <li><a href="index.html#gis" class="hover:text-brand-blue transition-colors duration-300">GIS Terrain Mapping</a></li>
+          <li><a href="index.html#environmental" class="hover:text-brand-blue transition-colors duration-300">Environmental Compliance</a></li>
+        </ul>
+      </div>
+
+      <div class="md:col-span-2">
+        <h4 class="text-white text-[15px]">Official Gateway</h4>
+        <p class="mt-5 text-[13px] font-light leading-relaxed text-gray-500">
+          Machakos County, Kenya.
+          <a href="mailto:info@geolericconsultancy.co.ke"
+             class="block mt-2 text-white font-normal hover:text-brand-blue transition-colors duration-300 break-all">
+            info@geolericconsultancy.co.ke
+          </a>
+        </p>
+      </div>
+
+    </div>
+
+    <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-5">
+      <p class="text-[11px] font-normal tracking-[0.14em] uppercase text-gray-600">
+        &copy; <span id="current-year"></span> GeoLeric Consultants. All Rights Reserved.
+      </p>
+
+      <p class="text-[11px] font-normal tracking-[0.14em] uppercase text-gray-600 flex items-center gap-1.5">
+        Designed &amp; Developed by
+        <a href="https://sarahadevelopers.co.ke" target="_blank" rel="noopener noreferrer"
+           class="text-gray-300 hover:text-brand-blue font-medium tracking-[0.14em] transition-colors duration-300 underline-offset-4 hover:underline">
+          Saraha Developers
+        </a>
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+
+<!-- ============================================================
+     SCRIPTS
+============================================================ -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+
+  /* ---------- Dynamic year ---------- */
+  const yearEl = document.getElementById('current-year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  /* ---------- Mobile drawer ---------- */
+  const drawer   = document.getElementById('mobile-drawer');
+  const overlay  = document.getElementById('drawer-overlay');
+  const content  = document.getElementById('drawer-content');
+  const openBtn  = document.getElementById('mobile-menu-btn');
+  const closeBtn = document.getElementById('close-drawer-btn');
+
+  const openMenu = () => {
+    drawer.classList.remove('pointer-events-none');
+    overlay.classList.replace('opacity-0', 'opacity-100');
+    content.classList.replace('translate-x-full', 'translate-x-0');
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeMenu = () => {
+    drawer.classList.add('pointer-events-none');
+    overlay.classList.replace('opacity-100', 'opacity-0');
+    content.classList.replace('translate-x-0', 'translate-x-full');
+    document.body.style.overflow = '';
+  };
+
+  openBtn?.addEventListener('click', openMenu);
+  closeBtn?.addEventListener('click', closeMenu);
+  overlay?.addEventListener('click', closeMenu);
+
+  content?.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && !drawer.classList.contains('pointer-events-none')) closeMenu();
+  });
+
+  /* ---------- Scroll reveal (progressive enhancement) ---------- */
+  if ('IntersectionObserver' in window) {
+    const reveals = document.querySelectorAll('[data-reveal]');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+
+    reveals.forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(18px)';
+      el.style.transition = 'opacity .7s cubic-bezier(.4,0,.2,1), transform .7s cubic-bezier(.4,0,.2,1)';
+      io.observe(el);
+    });
+  }
+
+});
+</script>
+
+</body>
+</html>
