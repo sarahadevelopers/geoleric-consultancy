@@ -1,0 +1,12 @@
+# robots.txt for GeoLeric Consultants
+# https://www.geolericconsultancy.co.ke/
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.geolericconsultancy.co.ke/sitemap.xml
+
+# Block common cruft
+Disallow: /*.json$
+Disallow: /.git/
