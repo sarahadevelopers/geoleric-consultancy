@@ -990,12 +990,13 @@
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-end mb-16">
       <div class="lg:col-span-7">
         <span class="eyebrow text-brand-red">Regional Footprint</span>
-        <h2 class="mt-6 max-w-[20ch]">Navigating Kenya's fastest-growing corridors.</h2>
+        <h2 class="mt-6 max-w-[20ch]">Rooted in Machakos. Delivering across Kenya.</h2>
       </div>
       <div class="lg:col-span-5 lg:pl-10 lg:border-l lg:border-black/[0.08]">
         <p class="text-[15px] text-gray-500 max-w-prose">
-          Our operational base sits within Machakos County, but we extend mapping and
-          environmental work to projects nationally.
+          Two offices —Nairobi (Head Office) and Machakos (Branch) —
+          support geospatial, cadastral and land development work on projects across
+          the Nairobi Metropolitan growth corridors and beyond.
         </p>
       </div>
     </div>
@@ -1007,47 +1008,89 @@
 
         <div class="relative">
           <span class="eyebrow text-gray-400">Coverage Map</span>
-          <h4 class="mt-3 text-[18px]">Primary Operational Area</h4>
+          <h4 class="mt-3 text-[18px]">National Reach</h4>
 
           <div class="mt-8 relative aspect-[4/3]">
             <svg viewBox="0 0 500 375" class="w-full h-full">
               <defs>
                 <radialGradient id="areaGlow" cx="50%" cy="50%" r="60%">
-                  <stop offset="0%" stop-color="#2CB2E2" stop-opacity="0.20"/>
+                  <stop offset="0%" stop-color="#2CB2E2" stop-opacity="0.18"/>
                   <stop offset="100%" stop-color="#2CB2E2" stop-opacity="0"/>
                 </radialGradient>
               </defs>
 
-              <circle cx="250" cy="180" r="140" fill="url(#areaGlow)"/>
+              <!-- National coverage halo -->
+              <circle cx="250" cy="180" r="180" fill="url(#areaGlow)"/>
 
-              <path d="M 130 100 L 220 70 L 320 85 L 380 130 L 400 210 L 360 280 L 260 320 L 170 300 L 120 240 L 110 160 Z"
-                    fill="none" stroke="rgba(44,178,226,.35)" stroke-width="1.5" stroke-dasharray="6 4"/>
+              <!-- Stylised Kenya outline -->
+              <path d="M 90 80 L 180 50 L 300 60 L 400 110 L 430 200 L 400 280 L 300 330 L 180 320 L 100 260 L 70 170 Z"
+                    fill="none" stroke="rgba(44,178,226,.28)" stroke-width="1.5" stroke-dasharray="6 4"/>
 
-              <line x1="250" y1="180" x2="180" y2="140" stroke="rgba(44,178,226,.35)" stroke-width="1"/>
-              <line x1="250" y1="180" x2="310" y2="150" stroke="rgba(44,178,226,.35)" stroke-width="1"/>
-              <line x1="250" y1="180" x2="330" y2="220" stroke="rgba(251,176,59,.35)" stroke-width="1"/>
-              <line x1="250" y1="180" x2="200" y2="240" stroke="rgba(251,176,59,.35)" stroke-width="1"/>
-              <line x1="250" y1="180" x2="280" y2="270" stroke="rgba(230,28,36,.30)" stroke-width="1"/>
+              <!-- Connector lines from Nairobi hub -->
+              <line x1="220" y1="180" x2="300" y2="200" stroke="rgba(44,178,226,.40)" stroke-width="1"/>
+              <line x1="220" y1="180" x2="150" y2="150" stroke="rgba(44,178,226,.35)" stroke-width="1"/>
+              <line x1="220" y1="180" x2="175" y2="185" stroke="rgba(44,178,226,.30)" stroke-width="1"/>
+              <line x1="220" y1="180" x2="195" y2="215" stroke="rgba(44,178,226,.30)" stroke-width="1"/>
+              <line x1="220" y1="180" x2="265" y2="195" stroke="rgba(44,178,226,.30)" stroke-width="1"/>
+              <line x1="220" y1="180" x2="310" y2="150" stroke="rgba(44,178,226,.35)" stroke-width="1"/>
+              <line x1="220" y1="180" x2="260" y2="250" stroke="rgba(251,176,59,.35)" stroke-width="1"/>
+              <line x1="220" y1="180" x2="330" y2="260" stroke="rgba(230,28,36,.30)" stroke-width="1"/>
+              <line x1="220" y1="180" x2="120" y2="260" stroke="rgba(156,163,175,.35)" stroke-width="1"/>
 
-              <circle cx="250" cy="180" r="7" fill="#2CB2E2"/>
-              <circle cx="250" cy="180" r="14" fill="none" stroke="#2CB2E2" stroke-opacity="0.35" stroke-width="1"/>
-              <text x="250" y="205" fill="#0F1214" font-family="Jost, sans-serif" font-size="11" font-weight="500" text-anchor="middle" letter-spacing="1">MACHAKOS</text>
+              <!-- NAIROBI — national coordination office -->
+              <circle cx="220" cy="180" r="7" fill="#2CB2E2"/>
+              <circle cx="220" cy="180" r="14" fill="none" stroke="#2CB2E2" stroke-opacity="0.35" stroke-width="1"/>
+              <text x="220" y="164" fill="#0F1214" font-family="Jost, sans-serif" font-size="10" font-weight="500" text-anchor="middle" letter-spacing="1">NAIROBI</text>
 
-              <circle cx="180" cy="140" r="4" fill="#2CB2E2"/>
-              <text x="180" y="132" fill="rgba(15,18,20,.55)" font-family="Jost, sans-serif" font-size="9" font-weight="400" text-anchor="middle" letter-spacing="0.5">MAVOKO</text>
+              <!-- MACHAKOS — primary base -->
+              <circle cx="300" cy="200" r="9" fill="#2CB2E2"/>
+              <circle cx="300" cy="200" r="18" fill="none" stroke="#2CB2E2" stroke-opacity="0.40" stroke-width="1"/>
+              <text x="300" y="232" fill="#0F1214" font-family="Jost, sans-serif" font-size="11" font-weight="500" text-anchor="middle" letter-spacing="1">MACHAKOS</text>
+              <text x="300" y="245" fill="rgba(15,18,20,.45)" font-family="Jost, sans-serif" font-size="8" font-weight="400" text-anchor="middle" letter-spacing="1.2"></text>
 
-              <circle cx="310" cy="150" r="4" fill="#2CB2E2"/>
-              <text x="310" y="142" fill="rgba(15,18,20,.55)" font-family="Jost, sans-serif" font-size="9" font-weight="400" text-anchor="middle" letter-spacing="0.5">KANGUNDO</text>
+              <!-- Corridor pins -->
 
-              <circle cx="330" cy="220" r="4" fill="#FBB03B"/>
-              <text x="330" y="235" fill="rgba(15,18,20,.55)" font-family="Jost, sans-serif" font-size="9" font-weight="400" text-anchor="middle" letter-spacing="0.5">JOSKA</text>
+              <!-- Mavoko -->
+              <circle cx="150" cy="150" r="4" fill="#2CB2E2"/>
+              <text x="150" y="138" fill="rgba(15,18,20,.55)" font-family="Jost, sans-serif" font-size="8.5" font-weight="400" text-anchor="middle" letter-spacing="0.5">MAVOKO</text>
 
-              <circle cx="200" cy="240" r="4" fill="#FBB03B"/>
-              <text x="200" y="255" fill="rgba(15,18,20,.55)" font-family="Jost, sans-serif" font-size="9" font-weight="400" text-anchor="middle" letter-spacing="0.5">MALAA</text>
+              <!-- Athi River -->
+              <circle cx="175" cy="185" r="3.5" fill="#2CB2E2"/>
+              <text x="168" y="200" fill="rgba(15,18,20,.50)" font-family="Jost, sans-serif" font-size="8" font-weight="400" text-anchor="middle" letter-spacing="0.3">ATHI RIVER</text>
 
-              <circle cx="280" cy="270" r="4" fill="#E61C24"/>
-              <text x="280" y="285" fill="rgba(15,18,20,.55)" font-family="Jost, sans-serif" font-size="9" font-weight="400" text-anchor="middle" letter-spacing="0.5">YATTA</text>
+              <!-- Syokimau -->
+              <circle cx="195" cy="215" r="3.5" fill="#2CB2E2"/>
+              <text x="185" y="230" fill="rgba(15,18,20,.50)" font-family="Jost, sans-serif" font-size="8" font-weight="400" text-anchor="middle" letter-spacing="0.3">SYOKIMAU</text>
 
+              <!-- Kitengela -->
+              <circle cx="190" cy="160" r="3.5" fill="#FBB03B"/>
+              <text x="200" y="152" fill="rgba(15,18,20,.50)" font-family="Jost, sans-serif" font-size="8" font-weight="400" text-anchor="start" letter-spacing="0.3">KITENGELA</text>
+
+              <!-- Konza -->
+              <circle cx="265" cy="195" r="3.5" fill="#FBB03B"/>
+              <text x="272" y="210" fill="rgba(15,18,20,.50)" font-family="Jost, sans-serif" font-size="8" font-weight="400" text-anchor="start" letter-spacing="0.3">KONZA</text>
+
+              <!-- Kangundo -->
+              <circle cx="310" cy="150" r="3.5" fill="#2CB2E2"/>
+              <text x="310" y="138" fill="rgba(15,18,20,.55)" font-family="Jost, sans-serif" font-size="8.5" font-weight="400" text-anchor="middle" letter-spacing="0.5">KANGUNDO</text>
+
+              <!-- Joska -->
+              <circle cx="260" cy="250" r="3.5" fill="#FBB03B"/>
+              <text x="260" y="264" fill="rgba(15,18,20,.55)" font-family="Jost, sans-serif" font-size="8.5" font-weight="400" text-anchor="middle" letter-spacing="0.5">JOSKA</text>
+
+              <!-- Malaa -->
+              <circle cx="285" cy="245" r="3.5" fill="#FBB03B"/>
+              <text x="295" y="250" fill="rgba(15,18,20,.50)" font-family="Jost, sans-serif" font-size="8" font-weight="400" text-anchor="start" letter-spacing="0.3">MALAA</text>
+
+              <!-- Yatta -->
+              <circle cx="330" cy="260" r="3.5" fill="#E61C24"/>
+              <text x="330" y="274" fill="rgba(15,18,20,.55)" font-family="Jost, sans-serif" font-size="8.5" font-weight="400" text-anchor="middle" letter-spacing="0.5">YATTA</text>
+
+              <!-- National -->
+              <circle cx="120" cy="260" r="3.5" fill="#9CA3AF"/>
+              <text x="120" y="274" fill="rgba(15,18,20,.55)" font-family="Jost, sans-serif" font-size="8.5" font-weight="400" text-anchor="middle" letter-spacing="0.5">NATIONAL</text>
+
+              <!-- Compass -->
               <g transform="translate(450, 60)">
                 <circle r="16" fill="none" stroke="rgba(15,18,20,.18)" stroke-width="1"/>
                 <path d="M 0 -10 L 3 0 L 0 10 L -3 0 Z" fill="#2CB2E2"/>
@@ -1059,56 +1102,60 @@
       </div>
 
       <div class="lg:col-span-5 grid grid-cols-2 gap-4">
-
+  <!-- Nairobi Office -->
         <div class="group relative rounded-2xl overflow-hidden border border-black/[0.06] aspect-square img-zoom">
           <img src="geoleric-consultants-logo.webp"
-               alt="Mavoko industrial corridor"
+               alt="GeoLeric Consultants Nairobi office"
+               width="500" height="500"
+               class="w-full h-full object-cover" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-navy/90 via-brand-navy/30 to-transparent"></div>
+          <div class="absolute inset-x-0 bottom-0 p-5">
+            <span class="text-[10px] font-medium tracking-[0.2em] uppercase text-brand-blue">Office</span>
+            <p class="mt-1 text-[14px] font-medium text-white">Nairobi</p>
+            <p class="text-[11px] font-light text-white/70">Head Office</p>
+          </div>
+        </div>
+        <!-- Machakos Office — Primary -->
+        <div class="group relative rounded-2xl overflow-hidden border border-black/[0.06] aspect-square img-zoom">
+          <img src="geoleric-consultants-logo.webp"
+               alt="GeoLeric Consultants Machakos office"
+               width="500" height="500"
+               class="w-full h-full object-cover" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-navy/90 via-brand-navy/30 to-transparent"></div>
+          <div class="absolute inset-x-0 bottom-0 p-5">
+            <span class="text-[10px] font-medium tracking-[0.2em] uppercase text-brand-yellow">Branch</span>
+            <p class="mt-1 text-[14px] font-medium text-white">Machakos</p>
+            <p class="text-[11px] font-light text-white/70">Field &amp; operations HQ</p>
+          </div>
+        </div>
+
+      
+
+        <!-- Mavoko Corridor -->
+        <div class="group relative rounded-2xl overflow-hidden border border-black/[0.06] aspect-square img-zoom">
+          <img src="geoleric-consultants-logo.webp"
+               alt="Mavoko and Athi River corridor"
                width="500" height="500"
                class="w-full h-full object-cover" loading="lazy">
           <div class="absolute inset-0 bg-gradient-to-t from-brand-navy/85 via-brand-navy/20 to-transparent"></div>
           <div class="absolute inset-x-0 bottom-0 p-5">
-            <span class="text-[10px] font-medium tracking-[0.2em] uppercase text-brand-blue">Primary</span>
+            <span class="text-[10px] font-medium tracking-[0.2em] uppercase text-brand-blue">Corridor</span>
             <p class="mt-1 text-[14px] font-medium text-white">Mavoko</p>
             <p class="text-[11px] font-light text-white/70">Athi River · Syokimau</p>
           </div>
         </div>
 
+        <!-- National Projects -->
         <div class="group relative rounded-2xl overflow-hidden border border-black/[0.06] aspect-square img-zoom">
           <img src="geoleric-consultants-logo.webp"
-               alt="Kangundo Road residential corridor"
-               width="500" height="500"
-               class="w-full h-full object-cover" loading="lazy">
-          <div class="absolute inset-0 bg-gradient-to-t from-brand-navy/85 via-brand-navy/20 to-transparent"></div>
-          <div class="absolute inset-x-0 bottom-0 p-5">
-            <span class="text-[10px] font-medium tracking-[0.2em] uppercase text-brand-yellow">Primary</span>
-            <p class="mt-1 text-[14px] font-medium text-white">Kangundo Rd</p>
-            <p class="text-[11px] font-light text-white/70">Joska · Malaa</p>
-          </div>
-        </div>
-
-        <div class="group relative rounded-2xl overflow-hidden border border-black/[0.06] aspect-square img-zoom">
-          <img src="geoleric-consultants-logo.webp"
-               alt="Machakos Central commercial zone"
-               width="500" height="500"
-               class="w-full h-full object-cover" loading="lazy">
-          <div class="absolute inset-0 bg-gradient-to-t from-brand-navy/85 via-brand-navy/20 to-transparent"></div>
-          <div class="absolute inset-x-0 bottom-0 p-5">
-            <span class="text-[10px] font-medium tracking-[0.2em] uppercase text-brand-red">Central</span>
-            <p class="mt-1 text-[14px] font-medium text-white">Machakos</p>
-            <p class="text-[11px] font-light text-white/70">Town &amp; peri-urban</p>
-          </div>
-        </div>
-
-        <div class="group relative rounded-2xl overflow-hidden border border-black/[0.06] aspect-square img-zoom">
-          <img src="geoleric-consultants-logo.webp"
-               alt="National projects — extended coverage"
+               alt="GeoLeric Consultants national projects"
                width="500" height="500"
                class="w-full h-full object-cover" loading="lazy">
           <div class="absolute inset-0 bg-gradient-to-t from-brand-navy/85 via-brand-navy/20 to-transparent"></div>
           <div class="absolute inset-x-0 bottom-0 p-5">
             <span class="text-[10px] font-medium tracking-[0.2em] uppercase text-white/60">Extended</span>
             <p class="mt-1 text-[14px] font-medium text-white">National</p>
-            <p class="text-[11px] font-light text-white/70">Selected projects</p>
+            <p class="text-[11px] font-light text-white/70">Projects across Kenya</p>
           </div>
         </div>
 
@@ -1117,8 +1164,6 @@
     </div>
   </div>
 </section>
-
-
 <!-- ============================================================
      WHY GEOLERIC
 ============================================================ -->
@@ -1359,17 +1404,21 @@
                      class="field-light">
             </div>
 
-            <div class="flex flex-col">
-              <label for="area" class="eyebrow text-gray-400 mb-2.5">Property Location</label>
-              <select id="area" name="area" class="field-light">
-                <option>Mavoko (Athi River, Syokimau, Mlolongo)</option>
-                <option>Matungulu (Joska, Malaa)</option>
-                <option>Machakos Central</option>
-                <option>Yatta (Matuu)</option>
-                <option>Kangundo</option>
-                <option>Outside Machakos County</option>
-              </select>
-            </div>
+           <div class="flex flex-col">
+  <label for="area" class="eyebrow text-gray-400 mb-2.5">Property Location</label>
+  <select id="area" name="area" class="field-light">
+    <option>Select</option>
+    <option>Machakos Central</option>
+    <option>Mavoko (Athi River, Syokimau, Mlolongo)</option>
+    <option>Kitengela</option>
+    <option>Konza</option>
+    <option>Matungulu (Joska, Malaa)</option>
+    <option>Kangundo</option>
+    <option>Yatta (Matuu)</option>
+    <option>Nairobi</option>
+    <option>Elsewhere in Kenya</option>
+  </select>
+</div>
 
             <div class="sm:col-span-2 flex flex-col">
               <label for="service" class="eyebrow text-gray-400 mb-2.5">Scope Required</label>
